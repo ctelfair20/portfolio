@@ -6,7 +6,9 @@ import Pokeball from "../../components/Pokeball";
 import PokeInfoCard from "../../components/PokeInfoCard";
 import TeamBox from "../../components/TeamBox";
 import { pokeInterface } from './interface';
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/pokepage.module.css';
+import Image from "next/image";
+import pokemonLogo from '../../public/Pokemon-logo.jpg'
 
 const PokePage = () => {
   const [favorited, setFavorited] = useState(Array<pokeInterface>);
@@ -14,11 +16,12 @@ const PokePage = () => {
 
   return (
     <PokeProvider>
-      <Box className="pokemon-page">
+      <Box className={styles['pokemon-page']}>
         {/* https://1000logos.net/wp-content/uploads/2017/05/Symbol-Pokemon-Logo.jpg -- black logo*/}
         <Box id="logo-box">
-          <img id="logo" src="https://1000logos.net/wp-content/uploads/2017/05/Pokemon-logo.jpg"
-            alt="pokemon-logo" />
+          <Image id={styles.logo} src={pokemonLogo} priority={true}
+            alt="pokemon-logo"
+          />
         </Box>
 
         <Container className="container">

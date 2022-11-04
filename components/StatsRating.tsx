@@ -30,7 +30,7 @@ const StatsRating = ({ baseStat }: PropsI) => {
     <Rating
       readOnly
       value={baseStat / 51}
-      name="max-stat"
+      name={styles['max-stat']}
       // defaultValue={baseStat/51}
       getLabelText={(value: number) => `${value} Effort Value${value !== 1 ? 's' : ''}`}
       icon={<CatchingPokemonIcon sx={{ color: red[500] }} fontSize="small" />}

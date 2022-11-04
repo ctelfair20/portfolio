@@ -24,11 +24,11 @@ const TeamCard = ({ pokemon }: PropsI) => {
 
   return (
     <Box
-      className="team-member"
+      className={styles['team-member']}
     >
       {
         <img
-          className="mini-art"
+          className={styles['mini-art']}
           onClick={handleClick}
           src={miniArt ? miniArt : officialArt}
           alt={pokemonName}

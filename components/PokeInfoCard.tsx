@@ -8,7 +8,7 @@ import styles from '../styles/pokepage.module.css';
 const PokeInfoCard = () => {
 
   return (
-    <Box className="pokemon-info-box">
+    <Box className={styles['pokemon-info-box']}>
       <Stats />
       <Abilities />
       <Attacks />

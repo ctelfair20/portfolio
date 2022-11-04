@@ -36,7 +36,7 @@ const TeamBox = ({ favorited }: PropsI) => {
 
   return (
     <Box
-      className="team-box"
+      className={styles['team-box']}
     >
       {generateTeam()}
     </Box >

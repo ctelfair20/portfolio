@@ -15,8 +15,8 @@ const Stats = () => {
     const id = 'st' + i
 
     return (
-      <Box className='stat-box' key={id}>
-        <span className='stat'>
+      <Box className={styles['stat-box']} key={id}>
+        <span className={styles.stat}>
           {StatWithCapsFirstLetter}:
         </span>
         <StatsRating baseStat={baseStat} />
@@ -27,12 +27,12 @@ const Stats = () => {
   return (
     <Paper
       elevation={3}
-      className="pokemon-stats-paper"
+      className={styles['pokemon-stats-paper']}
     >
-      <Box className="title">
+      <Box className={styles.title}>
         Stats:
       </Box>
-      <Box className="pokemon-stats">
+      <Box className={styles['pokemon-stats']}>
         {statsMap}
       </Box>
     </Paper>

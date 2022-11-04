@@ -1,5 +1,6 @@
 import { Box, Paper } from '@mui/material';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
+import styles from '../styles/Home.module.css';
 
 const Actions = () => {
 
@@ -16,12 +17,12 @@ const Actions = () => {
   return (
     <Paper
       elevation={3}
-      className="pokemon-attacks-paper"
+      className={styles["pokemon-attacks-paper"]}
     >
-      <Box className="title">
+      <Box className={styles.title}>
         Attacks: {attacksMap?.length !== 0 ? '' : "Unknown"}
       </Box>
-      <Box className="pokemon-attacks">
+      <Box className={styles["pokemon-attacks"]}>
         {attacksMap}
       </Box>
     </Paper>

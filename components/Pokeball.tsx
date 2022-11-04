@@ -5,7 +5,7 @@ import { useUpdatePokeContext, usePokeContext, usePokedexContext, useUpdatePoked
 import { Box } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/pokepage.module.css';
 
 interface PropsI {
   setLiked: (value: boolean) => void

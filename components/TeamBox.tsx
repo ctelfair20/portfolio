@@ -2,6 +2,7 @@ import { Box } from "@mui/system";
 import TeamPlaceholder from "./TeamPlaceholder";
 import TeamCard from "./TeamCard";
 import { pokeInterface } from '../pages/Pokepage/interface';
+import styles from '../styles/pokepage.module.css';
 
 interface PropsI {
   favorited: Array<pokeInterface>

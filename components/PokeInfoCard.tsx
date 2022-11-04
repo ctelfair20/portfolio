@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import Stats from "./Stats";
 import Abilities from "./Abilities";
 import Attacks from "./Attacks";
+import styles from '../styles/pokepage.module.css';
 
 // This componet displays the conponents that make up the right side of the screen
 const PokeInfoCard = () => {

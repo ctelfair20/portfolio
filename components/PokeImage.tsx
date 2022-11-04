@@ -1,5 +1,5 @@
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/pokepage.module.css';
 
 const PokeImage = () => {
 

@@ -5,7 +5,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
 import { pokeInterface } from "../pages/Pokepage/interface";
-import styles from '../styles/Home.module.css';
+import styles from '../styles/pokepage.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void

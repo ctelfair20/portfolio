@@ -3,7 +3,7 @@ import { pokeInterface } from '../pages/Pokepage/interface';
 import Banner from './Banner';
 import PokeImage from './PokeImage';
 import PokeNameAndDescription from './PokeNameAndDescription';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/pokepage.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void

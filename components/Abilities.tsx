@@ -1,5 +1,6 @@
 import { Box, Paper } from '@mui/material';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
+import styles from '../styles/Home.module.css';
 
 const Abilities = () => {
 
@@ -14,12 +15,12 @@ const Abilities = () => {
   return (
     <Paper
       elevation={3}
-      className="pokemon-abilities-paper"
+      className={styles['pokemon-abilities-paper']}
     >
-      <Box className="title">
+      <Box className={styles.title}>
         Abilities:
       </Box>
-      <Box className="pokemon-abilities">
+      <Box className={styles["pokemon-abilities"]}>
         {abilitesMap}
       </Box>
     </Paper>

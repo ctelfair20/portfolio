@@ -8,7 +8,7 @@ import TeamBox from "../../components/TeamBox";
 import { pokeInterface } from './interface';
 import styles from '../../styles/pokepage.module.css';
 import Image from "next/image";
-import pokemonLogo from '../../public/Pokemon-logo.jpg'
+import pokemonLogo from '../../public/Pokemon-logo.jpg';
 
 const PokePage = () => {
   const [favorited, setFavorited] = useState(Array<pokeInterface>);
@@ -18,13 +18,13 @@ const PokePage = () => {
     <PokeProvider>
       <Box className={styles['pokemon-page']}>
         {/* https://1000logos.net/wp-content/uploads/2017/05/Symbol-Pokemon-Logo.jpg -- black logo*/}
-        <Box id="logo-box">
+        <Box id={styles["logo-box"]}>
           <Image id={styles.logo} src={pokemonLogo} priority={true}
             alt="pokemon-logo"
           />
         </Box>
 
-        <Container className="container">
+        <Container className={styles.container}>
           <Grid
             container
             justifyContent="space-evenly"

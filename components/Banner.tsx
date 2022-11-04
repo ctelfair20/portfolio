@@ -5,6 +5,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
 import { pokeInterface } from "../pages/Pokepage/interface";
+import styles from '../styles/Home.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void
@@ -76,7 +77,7 @@ const Banner = ({ favorited, setFavorited, liked, setLiked }: PropsI) => {
   }
 
   return (
-    <Box className="banner">
+    <Box className={styles.banner}>
       <Typography
         sx={{ fontWeight: 'bold' }}
       >

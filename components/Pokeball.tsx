@@ -5,6 +5,7 @@ import { useUpdatePokeContext, usePokeContext, usePokedexContext, useUpdatePoked
 import { Box } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import styles from '../styles/Home.module.css';
 
 interface PropsI {
   setLiked: (value: boolean) => void
@@ -123,20 +124,20 @@ const Pokeball = (({ setLiked, liked, favorited }: PropsI) => {
 
   return (
     <>
-      <Box className='arrow-box'>
-        <Box className='back-arrow-box'>
+      <Box className={styles['arrow-box']}>
+        <Box className={styles['back-arrow-box']}>
           {backArrow ? <ArrowBackIosNewIcon onClick={handleBackArrowClick} fontSize='large' /> : ''}
         </Box>
-        <Box className='forward-arrow-box'>
+        <Box className={styles['forward-arrow-box']}>
           {forwardArrow ? <ArrowForwardIosIcon onClick={handleFowardArrowClick} fontSize='large' /> : ''}
         </Box>
       </Box>
-      <button className="pokeball-button" onClick={handleOnClick}>
-        <Box className='outter-circle'>
-          <Box className='red-half'></Box>
-          <Box className='white-half'>
-            <Box className='middle-circle'>
-              <Box className='inner-circle'></Box>
+      <button className={styles['pokeball-button']} onClick={handleOnClick}>
+        <Box className={styles['outter-circle']}>
+          <Box className={styles['red-half']}></Box>
+          <Box className={styles['white-half']}>
+            <Box className={styles['middle-circle']}>
+              <Box className={styles['inner-circle']}></Box>
             </Box>
           </Box>
         </Box>

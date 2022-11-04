@@ -1,5 +1,6 @@
 import { Box, Paper } from '@mui/material';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
+import styles from '../styles/pokepage.module.css';
 
 const PokeNameAndDescription = () => {
   // Typescript won't let me add these varibles together like normal strings -- add " || '' " to variables -- look for css  to do this easier
@@ -26,12 +27,12 @@ const PokeNameAndDescription = () => {
   })
 
   return (
-    <Box className="below-image">
-      <Paper elevation={3} className="pokemon-name">{possName}</Paper>
-      <Box className="pokemon-description-type">
-        <Paper elevation={3} className="pokemon-description">
-          <span className="title">Description:</span>
-          <Box id="description">
+    <Box className={styles['below-image']}>
+      <Paper elevation={3} className={styles['pokemon-name']}>{possName}</Paper>
+      <Box className={styles['pokemon-description-type']}>
+        <Paper elevation={3} className={styles['pokemon-description']}>
+          <span className={styles['title']}>Description:</span>
+          <Box id={styles['description']}>
             <Box>
               Ht: {height}
             </Box>
@@ -40,9 +41,9 @@ const PokeNameAndDescription = () => {
             </Box>
           </Box>
         </Paper>
-        <Paper elevation={3} className="pokemon-types">
-          <span className='title'>Types:</span>
-          <Box id="types">
+        <Paper elevation={3} className={styles['pokemon-types']}>
+          <span className={styles['title']}>Types:</span>
+          <Box id={styles['types']}>
             {typeBoxes}
             {/* {`${typeFirstLetterCaps}${remainingLettersInType}`} */}
           </Box>

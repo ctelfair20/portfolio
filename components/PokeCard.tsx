@@ -3,6 +3,7 @@ import { pokeInterface } from '../pages/Pokepage/interface';
 import Banner from './Banner';
 import PokeImage from './PokeImage';
 import PokeNameAndDescription from './PokeNameAndDescription';
+import styles from '../styles/Home.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void
@@ -17,11 +18,11 @@ const PokeCard = ({ favorited, setFavorited, liked, setLiked }: PropsI) => {
   return (
     <Card
       elevation={4}
-      className="pokemon-card"
+      className={styles['pokemon-card']}
     >
-      <Container className="pokemon-card-container">
+      <Container className={styles['pokemon-card-container']}>
         <Banner favorited={favorited} setFavorited={setFavorited} liked={liked} setLiked={setLiked} />
-        <Box className='pokemon-image-description-box'>
+        <Box className={styles['pokemon-image-description-box']}>
           <PokeImage />
           <PokeNameAndDescription />
         </Box>

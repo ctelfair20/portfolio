@@ -1,7 +1,7 @@
 import { Box, Paper } from '@mui/material';
-import { usePokeContext } from '../pages/Pokepage/PokeContext';
+import { usePokeContext } from '../../pages/Pokepage/PokeContext';
 import StatsRating from './StatsRating';
-import styles from '../styles/Pokedex.module.css';
+import styles from '../../styles/Pokedex.module.css';
 
 const Stats = () => {
 

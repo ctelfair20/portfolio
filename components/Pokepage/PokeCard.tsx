@@ -1,9 +1,9 @@
 import { Card, Container, Box } from '@mui/material';
-import { pokeInterface } from '../pages/Pokepage/interface';
+import { pokeInterface } from '../../pages/Pokepage/interface';
 import Banner from './Banner';
 import PokeImage from './PokeImage';
 import PokeNameAndDescription from './PokeNameAndDescription';
-import styles from '../styles/Pokedex.module.css';
+import styles from '../../styles/Pokedex.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void

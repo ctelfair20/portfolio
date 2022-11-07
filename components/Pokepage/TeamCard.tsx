@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import { pokeInterface } from '../pages/Pokepage/interface';
-import { useUpdatePokeContext, usePokedexContext } from '../pages/Pokepage/PokeContext';
-import styles from '../styles/Pokedex.module.css';
+import { pokeInterface } from '../../pages/Pokepage/interface';
+import { useUpdatePokeContext, usePokedexContext } from '../../pages/Pokepage/PokeContext';
+import styles from '../../styles/Pokedex.module.css';
 
 // This component displays the mini art or official art for the current pokemon as a team memeber IF the user favorited the pokemon
 interface PropsI {

@@ -3,9 +3,9 @@ import { red } from '@mui/material/colors';
 import { Box, Typography } from "@mui/material";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { usePokeContext } from '../pages/Pokepage/PokeContext';
-import { pokeInterface } from "../pages/Pokepage/interface";
-import styles from '../styles/Pokedex.module.css';
+import { usePokeContext } from '../../pages/Pokepage/PokeContext';
+import { pokeInterface } from "../../pages/Pokepage/interface";
+import styles from '../../styles/Pokedex.module.css';
 
 interface PropsI {
   setFavorited: (pokemon: pokeInterface[]) => void

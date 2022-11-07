@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { pokeInterface } from '../pages/Pokepage/interface';
-import { useUpdatePokeContext, usePokeContext, usePokedexContext, useUpdatePokedexContext } from '../pages/Pokepage/PokeContext';
+import { pokeInterface } from '../../pages/Pokepage/interface';
+import { useUpdatePokeContext, usePokeContext, usePokedexContext, useUpdatePokedexContext } from '../../pages/Pokepage/PokeContext';
 import { Box } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import styles from '../styles/Pokedex.module.css';
+import styles from '../../styles/Pokedex.module.css';
 
 interface PropsI {
   setLiked: (value: boolean) => void

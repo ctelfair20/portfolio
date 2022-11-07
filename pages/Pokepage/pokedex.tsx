@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Box, Container, Grid } from "@mui/material";
 import PokeProvider from "./PokeContext";
-import PokeCard from "../../components/PokeCard";
-import Pokeball from "../../components/Pokeball";
-import PokeInfoCard from "../../components/PokeInfoCard";
-import TeamBox from "../../components/TeamBox";
+import PokeCard from "../../components/Pokepage/PokeCard";
+import Pokeball from "../../components/Pokepage/Pokeball";
+import PokeInfoCard from "../../components/Pokepage/PokeInfoCard";
+import TeamBox from "../../components/Pokepage/TeamBox";
 import { pokeInterface } from './interface';
 import styles from '../../styles/Pokedex.module.css';
 import Image from "next/image";

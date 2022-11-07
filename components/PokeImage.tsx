@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
-import styles from '../styles/pokepage.module.css';
+import styles from '../styles/Pokedex.module.css';
 
 const PokeImage = () => {
 

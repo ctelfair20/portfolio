@@ -2,7 +2,7 @@
 import { Rating } from '@mui/material';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import { red } from '@mui/material/colors';
-import styles from '../styles/pokepage.module.css';
+import styles from '../styles/Pokedex.module.css';
 
 interface PropsI {
   baseStat: number;

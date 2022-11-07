@@ -6,7 +6,7 @@ import Pokeball from "../../components/Pokeball";
 import PokeInfoCard from "../../components/PokeInfoCard";
 import TeamBox from "../../components/TeamBox";
 import { pokeInterface } from './interface';
-import styles from '../../styles/pokepage.module.css';
+import styles from '../../styles/Pokedex.module.css';
 import Image from "next/image";
 import pokemonLogo from '../../public/Pokemon-logo.jpg';
 import NavBar from "../../components/NavBar";

@@ -1,6 +1,6 @@
 import { Box, Paper } from '@mui/material';
 import { usePokeContext } from '../pages/Pokepage/PokeContext';
-import styles from '../styles/pokepage.module.css';
+import styles from '../styles/Pokedex.module.css';
 
 const PokeNameAndDescription = () => {
   // Typescript won't let me add these varibles together like normal strings -- add " || '' " to variables -- look for css  to do this easier

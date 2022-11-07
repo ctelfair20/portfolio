@@ -9,6 +9,7 @@ import { pokeInterface } from './interface';
 import styles from '../../styles/pokepage.module.css';
 import Image from "next/image";
 import pokemonLogo from '../../public/Pokemon-logo.jpg';
+import NavBar from "../../components/NavBar";
 
 const PokePage = () => {
   const [favorited, setFavorited] = useState(Array<pokeInterface>);
@@ -17,7 +18,7 @@ const PokePage = () => {
   return (
     <PokeProvider>
       <Box className={styles['pokemon-page']}>
-        {/* https://1000logos.net/wp-content/uploads/2017/05/Symbol-Pokemon-Logo.jpg -- black logo*/}
+        <NavBar />
         <Box id={styles["logo-box"]}>
           <Image id={styles.logo} src={pokemonLogo} priority={true}
             alt="pokemon-logo"

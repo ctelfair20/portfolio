@@ -7,8 +7,15 @@ const NavBar = () => {
         <h1>Logo!</h1>
       </div>
       <Link href="/">
-        Home
+        About
       </Link>
+      <Link href="/Pokepage/pokedex">
+        Projects
+      </Link>
+      <Link href="/">
+        Contact
+      </Link>
+      <button>Resume</button>
     </nav>
   );
 }

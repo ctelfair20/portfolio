@@ -8,11 +8,11 @@ export interface pokeInterface {
   is_default?: boolean;
   location_area_encounters?: string;
   moves?: movesI[]; //!
-  name?: string; //!
+  name: string; //!
   order?: number;
   past_types?: [];
   species?: any;
-  sprites?: spriteI; //!
+  sprites: spriteI; //!
   stats?: statsI[]; //!
   types?: typesI[]; //!
   weight?: number;

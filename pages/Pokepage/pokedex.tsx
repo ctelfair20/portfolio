@@ -9,7 +9,6 @@ import { pokeInterface } from './interface';
 import styles from '../../styles/Pokedex.module.css';
 import Image from "next/image";
 import pokemonLogo from '../../public/Pokemon-logo.jpg';
-import NavBar from "../../components/NavBar";
 
 const PokePage = () => {
   const [favorited, setFavorited] = useState(Array<pokeInterface>);
@@ -18,7 +17,6 @@ const PokePage = () => {
   return (
     <PokeProvider>
       <Box className={styles['pokemon-page']}>
-        <NavBar />
         <Box id={styles["logo-box"]}>
           <Image id={styles.logo} src={pokemonLogo} priority={true}
             alt="pokemon-logo"

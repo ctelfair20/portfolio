@@ -123,7 +123,7 @@ const Pokeball = (({ setLiked, liked, favorited }: PropsI) => {
   };
 
   return (
-    <>
+    <Box className="pokeball-box">
       <Box className={styles['arrow-box']}>
         <Box className={styles['back-arrow-box']}>
           {backArrow ? <ArrowBackIosNewIcon onClick={handleBackArrowClick} fontSize='large' /> : ''}
@@ -142,7 +142,7 @@ const Pokeball = (({ setLiked, liked, favorited }: PropsI) => {
           </Box>
         </Box>
       </button>
-    </>
+    </Box>
   );
 });
 

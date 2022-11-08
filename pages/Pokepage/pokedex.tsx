@@ -5,10 +5,10 @@ import PokeCard from "../../components/Pokepage/PokeCard";
 import Pokeball from "../../components/Pokepage/Pokeball";
 import PokeInfoCard from "../../components/Pokepage/PokeInfoCard";
 import TeamBox from "../../components/Pokepage/TeamBox";
-import { pokeInterface } from './interface';
-import styles from '../../styles/Pokedex.module.css';
 import Image from "next/image";
 import pokemonLogo from '../../public/Pokemon-logo.jpg';
+import { pokeInterface } from './interface';
+import styles from '../../styles/Pokedex.module.css';
 
 const PokePage = () => {
   const [favorited, setFavorited] = useState(Array<pokeInterface>);
@@ -42,15 +42,12 @@ const PokePage = () => {
             {/* This grid item holds the pokeball button*/}
             <Grid
               item
-              sm={1}
+              sm={2}
               md={1}
               lg={2}
               justifyContent="center"
             >
-              <Box
-                className="pokeball-box">
-                <Pokeball setLiked={setLiked} favorited={favorited} liked={liked} />
-              </Box>
+              <Pokeball setLiked={setLiked} favorited={favorited} liked={liked} />
             </Grid>
 
             {/* This grid item holds the pokemon's advance info*/}

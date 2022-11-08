@@ -15,7 +15,7 @@ const NavBar = () => {
       <Link href="/">
         Contact
       </Link>
-      <button>Resume</button>
+      <button id="resume">Resume</button>
     </nav>
   );
 }

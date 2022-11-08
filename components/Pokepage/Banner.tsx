@@ -33,6 +33,8 @@ const Banner = ({ favorited, setFavorited, liked, setLiked }: PropsI) => {
 
   const handleClick = () => {
     setLiked(!liked)
+    console.log('fired');
+
   }
 
   // remove current pokemon from favorites

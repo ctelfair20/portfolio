@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myFont;
+  src: url(MyFont.ttf);
+}
+
 html,
 body {
   padding: 0;
@@ -22,7 +27,7 @@ nav {
   margin: 0 10px 10px 10px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -40,4 +45,8 @@ nav a,
 
 nav .logo {
   margin-right: auto;
+  font-family: myFont;
+  font-size: x-large;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 #logo {
@@ -32,11 +32,11 @@
 .pokemon-card {
   display: flex;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .pokemon-card-container {
-  height: 70vh;
+  height: 60vh;
   margin-top: 10px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .pokemon-image {
-  height: 70%;
+  height: 60%;
   width: 100%;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .pokemon-info-box {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -219,7 +219,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .team-member {

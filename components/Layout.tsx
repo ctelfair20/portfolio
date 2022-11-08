@@ -7,10 +7,10 @@ interface PropsI {
 
 const Layout = ({ children }: PropsI) => {
   return (
-    <>
+    <div className="content">
       <NavBar />
       {children}
-    </>
+    </div>
   );
 }
 

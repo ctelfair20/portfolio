@@ -10,3 +10,28 @@ a {
   color: rgb(49, 49, 49);
   text-decoration: none;
 }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: rebeccapurple; */
+}
+
+nav {
+  /* background-color: blue; */
+  padding: 5px 0;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a,
+button {
+  margin-left: 12px;
+}
+
+nav .logo {
+  margin-right: auto;
+}
